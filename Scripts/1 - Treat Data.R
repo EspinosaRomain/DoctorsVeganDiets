@@ -7,8 +7,9 @@ library(readxl)
 #Set working Directory
 # Romain 
 #setwd("~/Dropbox/Recherche/Expe Corps Médical/Expé Médecins/DataAnalysis")
+setwd("~/Library/CloudStorage/Dropbox/Recherche/Expe Corps Médical/Expé Médecins/DataAnalysis")
 # Thibaut
-setwd("/Users/ThibautArpinon_1/Dropbox/Expé Médecins/DataAnalysis/")
+#setwd("/Users/ThibautArpinon_1/Dropbox/Expé Médecins/DataAnalysis/")
 
 
 #Load user-written functions
@@ -65,7 +66,7 @@ mydata$PMPI=(mydata$T1-(mydata$T2+mydata$T3+mydata$T4+mydata$T5+mydata$T6+mydata
 mydata=mydata %>% rename(VPI=`Q4(1)`)
 mydata$VPI=gsub('€', '', mydata$VPI)
 mydata$VPI=gsub(',', '.', mydata$VPI)
-mydata$VPI=as.numeric(mydata$VPI)
+mydata$VPI=as.numeric(mydata$VPI)/2
 
 #Alimentation
 mydata = mydata %>% rename(

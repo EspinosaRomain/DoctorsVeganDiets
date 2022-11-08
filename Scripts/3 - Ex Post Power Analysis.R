@@ -15,9 +15,9 @@ library(censReg)
 
 #Set working Directory
 # Romain
-#setwd("~/Dropbox/Recherche/Expe Corps Médical/Expé Médecins/DataAnalysis")
+setwd("~/Dropbox/Recherche/Expe Corps Médical/Expé Médecins/DataAnalysis")
 # Thibaut
-setwd("/Users/ThibautArpinon_1/Dropbox/Expé Médecins/DataAnalysis/")
+#setwd("/Users/ThibautArpinon_1/Dropbox/Expé Médecins/DataAnalysis/")
 
 #Load user-written functions
 source("Scripts/FunctionMatrixStatDesc.R")
